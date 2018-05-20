@@ -8,15 +8,15 @@ namespace CQGS.LessonOne
     {
         static void Main(string[] args)
         {
-            var redPrinte = new ConsoleColorPrinter(ConsoleColor.Red);
-            var greenPrinter = new ConsoleColorPrinter(ConsoleColor.Green);
-            var yellowPrinter = new ConsoleColorPrinter(ConsoleColor.Yellow);
-            var defaultPrinter = new ConsolePrinter();
+            var redConsole = new ConsoleColorPrinter(ConsoleColor.Red);
+            var greenConsole = new ConsoleColorPrinter(ConsoleColor.Green);
+            var yellowConsole = new ConsoleColorPrinter(ConsoleColor.Yellow);
+            var defaultConsole = new ConsolePrinter();
 
-            var defaultSquare = new Square(defaultPrinter, "White", 6, 4);
-            var redCircle = new Circle(redPrinte, "Red", 10);
-            var greenSquare = new Square(greenPrinter, "Green", 5, 4);
-            var yellowRectangle = new Rectangle(yellowPrinter, "Yellow", 5, 2, 4);
+            var defaultSquare = new Square(defaultConsole, "White", 6, 4);
+            var redCircle = new Circle(redConsole, "Red", 10);
+            var greenSquare = new Square(greenConsole, "Green", 5, 4);
+            var yellowRectangle = new Rectangle(yellowConsole, "Yellow", 5, 2, 4);
 
             var shapeList = new List<IShapes>
             {

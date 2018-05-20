@@ -12,7 +12,7 @@ namespace CQGS.LessonOne
 
         public override void DisplayInformation()
         {
-            Print.Print($"Shape color {Colour} Shape area {GetArea()}");
+            Print.Print($"Shape {nameof(Circle)} color {Colour} Shape area {GetArea()}");
         }
 
         public override double GetArea() => Math.PI * Math.Pow(Radius, 2);

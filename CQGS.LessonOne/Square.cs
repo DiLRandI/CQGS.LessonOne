@@ -11,7 +11,7 @@ namespace CQGS.LessonOne
 
         public override void DisplayInformation()
         {
-            Print.Print($"Shape color {Colour} Shape area {GetArea()}");
+            Print.Print($"Shape {nameof(Square)} color {Colour} Shape area {GetArea()}");
         }
 
         public override double GetArea() => Width * Width;
