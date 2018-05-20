@@ -4,9 +4,9 @@ using System;
 
 namespace CQGS.LessonOne
 {
-    public class Circul : CircularShapes
+    public class Circle : CircularShapes
     {
-        public Circul(IPrint print, string colour, double diameter) : base(print, colour, diameter)
+        public Circle(IPrint print, string colour, double radius) : base(print, colour, radius)
         {
         }
 
@@ -15,10 +15,7 @@ namespace CQGS.LessonOne
             Print.Print($"Shape color {Colour} Shape area {GetArea()}");
         }
 
-        public override double GetArea()
-        {
-            return Math.PI * Diameter;
-        }
+        public override double GetArea() => Math.PI * Math.Pow(Radius, 2);
     }
 }
 

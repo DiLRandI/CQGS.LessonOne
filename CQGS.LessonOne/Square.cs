@@ -14,9 +14,6 @@ namespace CQGS.LessonOne
             Print.Print($"Shape color {Colour} Shape area {GetArea()}");
         }
 
-        public override double GetArea()
-        {
-            return Width * Width;
-        }
+        public override double GetArea() => Width * Width;
     }
 }

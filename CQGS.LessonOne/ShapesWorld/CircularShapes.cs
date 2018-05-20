@@ -4,15 +4,15 @@ namespace CQGS.LessonOne.ShapesWorld
 {
     public abstract class CircularShapes : IShapes
     {
-        public double Diameter { get; private set; }
-        public string Colour { get; private set; }
+        public double Radius { get; }
+        public string Colour { get; }
         protected readonly IPrint Print;
 
-        protected CircularShapes(IPrint print, string colour, double diameter)
+        protected CircularShapes(IPrint print, string colour, double radius)
         {
             Print = print;
             Colour = colour;
-            Diameter = diameter;
+            Radius = radius;
         }
 
         public abstract void DisplayInformation();
